@@ -55,34 +55,7 @@ gsap.from("#Specification", {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// **************************************ABOUT SECTION************************************
 
 gsap.from("#box1", {
     x: -300,
@@ -145,12 +118,7 @@ gsap.from("#about-para", {
 
 
 
-
-
-
-
-
-
+// *********************************CONTACT PAGE*****************************************************
 
 let t2 = gsap.timeline();
 
@@ -207,7 +175,7 @@ gsap.from("#contact-img", {
 
 
 
-// *********skill-cards************
+// **************************************SKILL CARD*****************************
 
 gsap.from("#continer-1", {
     x: -300,
@@ -227,7 +195,7 @@ gsap.from("#continer-1", {
 gsap.from("#continer-2", {
     x: -300,
     y: 300,
-    rotate: 60,
+    rotate: 360,
     duration: 1,
     delay: 2,
     opacity: 0,
@@ -270,17 +238,16 @@ gsap.from("#continer-4", {
 })
 
 gsap.from("#continer-5", {
-    x: 300,
-    y: 100,
-    rotate: 27,
+    x: 100,
+    y: 700,
+    rotate: 360,
     duration: 1,
-    delay: 2,
     opacity: 0,
     scrollTrigger: {
-        trigger: "#continer-5",
+        trigger: "#continer-4",
         scroller: "body",
-        end: "top 90%",
-        scrub: 2,
+        end: "top 30%",
+        scrub: 4,
     }
 })
 
@@ -314,6 +281,11 @@ gsap.from("#continer-7", {
     }
 })
 
+
+
+
+// **************************************HAMBURGER MENU*************************************
+
 gsap.from("#cancel", {
     rotate: 360,
     duration: 1,
@@ -328,6 +300,7 @@ gsap.from("#cancel", {
     // }
 
 })
+
 gsap.from(".menuitems", {
     x:400,
     rotate: 360,
@@ -351,6 +324,7 @@ let menuOpen = document.querySelector("#mini-menu");
 let menuClose = document.querySelector("#cancel");
 
 let hamItem = document.querySelector("#menu-links");
+let menuItem = document.querySelector(".menuitems");
 
 let flag = true;
 
